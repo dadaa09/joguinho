@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floresta Mágica da Arte</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div>
+      <span class="etiqueta">AVENTURA EDUCATIVA</span>
+      <h1>🎨 Floresta Mágica da Arte</h1>
+      <p>Explore, crie e descubra os segredos da arte!</p>
+    </div>
+
+    <button id="musicaBtn" class="botao-musica">
+      🎵 Ligar música
+    </button>
+  </header>
+
+  <main class="jogo">
+    <section class="painel-status">
+      <div>⭐ Pontos <strong id="pontos">0</strong></div>
+      <div>💎 Estrelas <strong id="estrelas">0</strong></div>
+      <div>🗺️ Fase <strong id="fase">1/5</strong></div>
+    </section>
+
+    <section class="floresta" id="floresta" aria-label="Cenário da floresta mágica">
+      <div class="sol">☀️</div>
+      <div class="nuvens">☁️　　　 ☁️</div>
+      <div class="montanhas">⛰️　🌲　⛰️　🌳</div>
+
+      <div class="arvores">
+        🌲　🌳　🍄　🌳　🌲　🌼　🌳
+      </div>
+
+      <div class="borboleta borboleta1">🦋</div>
+      <div class="borboleta borboleta2">🦋</div>
+      <div class="vaga-lume">✨</div>
+
+      <div class="chao"></div>
+      <div class="trilha"></div>
+
+      <div class="decoracao flor1">🌷</div>
+      <div class="decoracao flor2">🌻</div>
+      <div class="decoracao flor3">🌼</div>
+
+      <div id="obstaculo" class="obstaculo">🪵</div>
+
+      <div id="personagem" class="personagem" aria-label="Personagem aventureiro">
+        🧑‍🎨
+      </div>
+
+      <div id="poeira" class="poeira">💨</div>
+
+      <div class="placa">🎨 Trilha da Arte</div>
+
+      <div id="fala" class="fala" aria-live="polite">
+        Olá, artista! Vamos explorar?
+      </div>
+
+      <div id="inicio" class="capa">
+        <div class="capa-cartao">
+          <div class="icone-capa">🧑‍🎨</div>
+          <h2>Uma aventura colorida!</h2>
+          <p>Ajude o artista a atravessar a floresta superando desafios de Arte.</p>
+          <button id="iniciarBtn" class="botao-principal">
+            🌈 Começar aventura
+          </button>
+        </div>
+      </div>
+
+      <div id="perguntaBox" class="pergunta-box escondido">
+        <span class="etiqueta">DESAFIO ARTÍSTICO</span>
+        <h2 id="pergunta">Qual é a resposta?</h2>
+        <div id="alternativas" class="alternativas"></div>
+        <p id="feedback" aria-live="polite"></p>
+      </div>
+
+      <div id="final" class="capa escondido">
+        <div class="capa-cartao">
+          <div class="icone-capa">🏆</div>
+          <h2 id="tituloFinal">Você é um artista!</h2>
+          <p id="textoFinal"></p>
+          <button id="jogarNovamente" class="botao-principal">
+            🔄 Jogar novamente
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controles">
+      <div class="instrucoes">
+        <h2>🎮 Como jogar</h2>
+        <p>Ande pela floresta, encontre os desafios e pule os obstáculos respondendo às perguntas de Arte.</p>
+      </div>
+
+      <div class="botoes-controle">
+        <button id="andarBtn" class="botao-controle">
+          ➡️ Andar
+        </button>
+        <button id="pularBtn" class="botao-controle botao-pular">
+          🦘 Pular!
+        </button>
+      </div>
+
+      <p class="dica">
+        💡 No computador, use as setas ← → e a barra de espaço para pular.
+      </p>
+    </section>
+
+    <section class="colecao">
+      <h2>🖌️ Seu ateliê de descobertas</h2>
+      <p>Complete os desafios para conquistar estrelas mágicas!</p>
+      <div class="colecao-itens" id="colecao">
+        <span title="Cores">🎨</span>
+        <span title="Pintura">🖌️</span>
+        <span title="Desenho">✏️</span>
+        <span title="Criatividade">🌈</span>
+        <span title="Arte">🖼️</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌱 Floresta Mágica da Arte — Aprender é criar!</p>
+  </footer>
+</body>
+</html>
